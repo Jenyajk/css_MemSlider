@@ -4,12 +4,15 @@
 @media (max-width: 600px) {
 
     body {
-        background-color: #738290;
+        background-image: url("./image/Background.png");
+		background-size: 100%;
     }
     
     .slider {
         max-width: 42.5rem;
         margin: 5% auto;
+        border-radius: 2%;
+		box-shadow: -8rem -9rem 24rem 100rem rgba(10, 10, 10, 0.7);
         display: grid;
         background-color: rgb(101, 144, 161);
         grid-template-areas:
@@ -102,11 +105,11 @@
         box-sizing: border-box;
         width: 100%;
         font-size: 2rem;
-        background-color: rgb(133, 121, 105);
+        margin: 0.5% 0;
     
     }
     
-    #input1:checked~slider_wrapper .meme {
+    #input1:checked~.slider_wrapper .meme {
         transform: translate(0);
     }
     
@@ -122,19 +125,19 @@
         transform: translateX(-300%);
     }
     
-    #input1:checked~.text_wrapper .text_content .text1{
+    #input1:checked~.text_wrapper .text_content .text{
         transform: translate(0);
     }
     
-    #input2:checked~.text_wrapper .text_content .text2{
+    #input2:checked~.text_wrapper .text_content .text{
         transform: translateX(-100%);
     }
     
-    #input3:checked~.text_wrapper .text_content .text3{
+    #input3:checked~.text_wrapper .text_content .text{
         transform: translateX(-200%);
     }
     
-    #input4:checked~.text_wrapper .text_content .text4{
+    #input4:checked~.text_wrapper .text_content .text{
         transform: translateX(-300%);
     }
     

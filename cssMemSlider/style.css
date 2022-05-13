@@ -3,12 +3,15 @@
 @media (min-width: 601px) {
 
 	body {
-		background-color: #738290;
+		background-image: url("./image/Background.png");
+		background-size: 100%;
 	}
 
 	.slider {
 		max-width: 42.5rem;
 		margin: 5% auto;
+		border-radius: 2%;
+		box-shadow: -8rem -9rem 24rem 100rem rgba(10, 10, 10, 0.7);
 		display: grid;
 		background-color: rgb(101, 144, 161);
 		grid-template-areas:
@@ -26,14 +29,15 @@
 		display: flex;
 		justify-content: end;
 		grid-area: c;
+		align-items: center;
 	}
 
 	.button_wrapper label {
 		display: inline-block;
-		width: 0.5rem;
-		height: 0.5rem;
+		width: 0.7rem;
+		height: 0.7rem;
 		cursor: pointer;
-		margin: 1em;
+		margin: 0.5em;
 		box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, .8);
 		border-radius: 50%;
 		border: 0.3rem solid #213d55;
@@ -59,7 +63,6 @@
 	.slider_wrapper {
 		overflow: hidden;
 		grid-area: a;
-
 	}
 
 	.meme {
@@ -87,26 +90,24 @@
 
 	}
 
-	.button:hover {
+	/* .button:hover {
 		background-color: rgb(138, 214, 224);
 		border-radius: 100%;
-	}
+	} */
 
-	.button:hover label {
-		background-color: rgb(138, 214, 224);
+	label:hover {
+		border-color: rgb(138, 214, 224, 0.7);
 		border-radius: 100%;
-		border: 5px solid #5a83a5;
 	}
 
 	.text {
 		box-sizing: border-box;
 		width: 100%;
 		font-size: 2rem;
-		background-color: rgb(133, 121, 105);
 
 	}
 
-	#input1:checked~slider_wrapper .meme {
+	#input1:checked~.slider_wrapper .meme {
 		transform: translate(0);
 	}
 
@@ -122,19 +123,19 @@
 		transform: translateX(-300%);
 	}
 
-	#input1:checked~.text_wrapper .text_content .text1 {
+	#input1:checked~.text_wrapper .text_content .text {
 		transform: translate(0);
 	}
 
-	#input2:checked~.text_wrapper .text_content .text2 {
+	#input2:checked~.text_wrapper .text_content .text {
 		transform: translateX(-100%);
 	}
 
-	#input3:checked~.text_wrapper .text_content .text3 {
+	#input3:checked~.text_wrapper .text_content .text {
 		transform: translateX(-200%);
 	}
 
-	#input4:checked~.text_wrapper .text_content .text4 {
+	#input4:checked~.text_wrapper .text_content .text {
 		transform: translateX(-300%);
 	}
 
