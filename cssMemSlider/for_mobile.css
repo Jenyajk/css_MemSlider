@@ -33,17 +33,17 @@
         grid-area: c;
     }
     
-    .button_wrapper label {
-        display: inline-block;
-        width: 0.5rem;
-        height: 0.5rem;
-        cursor: pointer;
-        margin:  1em;
-        box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, .8);
-        border-radius: 50%;
-        border:  0.3rem solid #213d55;
-        background-color: #1d3750;
-    }
+	.button_wrapper label {
+		display: inline-block;
+		width: 0.7rem;
+		height: 0.7rem;
+		cursor: pointer;
+		margin: 0.5em;
+		border-radius: 50%;
+		border: 0.5rem solid;
+		border-color: rgb(101, 144, 161);
+		background-color: #1d3750;
+	}
     
     #input1:checked~.button_wrapper label[for="input1"] {
         background-color: white;
@@ -91,15 +91,12 @@
     
     }
     
-    .button:hover {
-        background-color: rgb(138, 214, 224);
-        border-radius: 100%;
-    }
-    .button:hover label{
-        background-color: rgb(138, 214, 224);
-        border-radius: 100%;
-        border: 5px solid #5a83a5;
-    }
+	label:hover {
+		border: 0.5rem solid #213d55;
+		border-color: rgb(138, 214, 224, 0.7);
+		border-radius: 100%;
+		background-color: #4c7292;
+	}
     
     .text {
         box-sizing: border-box;
