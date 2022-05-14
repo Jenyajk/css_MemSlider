@@ -10,10 +10,10 @@
 	.slider {
 		max-width: 42.5rem;
 		margin: 5% auto;
-		border-radius: 2%;
+		border-radius: 1%;
 		box-shadow: -8rem -9rem 24rem 100rem rgba(10, 10, 10, 0.7);
 		display: grid;
-		background-color: rgb(101, 144, 161);
+		background-color: rgb(184, 203, 211);
 		grid-template-areas:
 			"a a"
 			"b c"
@@ -34,13 +34,12 @@
 
 	.button_wrapper label {
 		display: inline-block;
-		width: 0.7rem;
-		height: 0.7rem;
+		width: 0.8rem;
+		height: 0.8rem;
 		cursor: pointer;
-		margin: 0.5em;
 		border-radius: 50%;
 		border: 0.5rem solid;
-		border-color: rgb(101, 144, 161);
+		border-color: rgb(184, 203, 211);
 		background-color: #1d3750;
 	}
 
@@ -86,19 +85,15 @@
 	.text_content {
 		display: flex;
 		width: 142.5rem;
-		transition: all 2s;
-
 	}
 
 	label:hover {
 		border: 0.5rem solid #213d55;
-		border-color: rgb(138, 214, 224, 0.7);
-		border-radius: 100%;
-		background-color: #4c7292;
+		border-color: rgb(184, 203, 211);
+		background-color: #456781;
 	}
 
 	.text {
-		box-sizing: border-box;
 		width: 100%;
 		font-size: 2rem;
 
@@ -106,6 +101,7 @@
 
 	#input1:checked~.slider_wrapper .meme {
 		transform: translate(0);
+
 	}
 
 	#input2:checked~.slider_wrapper .meme {
@@ -122,18 +118,22 @@
 
 	#input1:checked~.text_wrapper .text_content .text {
 		transform: translate(0);
+		transition: all 0.5s ease;
 	}
 
 	#input2:checked~.text_wrapper .text_content .text {
 		transform: translateX(-100%);
+		transition: all 0.5s ease;
 	}
 
 	#input3:checked~.text_wrapper .text_content .text {
 		transform: translateX(-200%);
+		transition: all 0.5s ease;
 	}
 
 	#input4:checked~.text_wrapper .text_content .text {
 		transform: translateX(-300%);
+		transition: all 0.5s ease;
 	}
 
 }
