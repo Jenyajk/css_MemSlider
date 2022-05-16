@@ -1,0 +1,139 @@
+@import "for_mobile.css";
+
+@media (min-width: 601px) {
+
+	body {
+		background-image: url("./image/Background.png");
+		background-size: 100%;
+	}
+
+	.slider {
+		max-width: 42.5rem;
+		margin: 5% auto;
+		border-radius: 1%;
+		box-shadow: -8rem -9rem 24rem 1000rem rgba(10, 10, 10, 0.7);
+		display: grid;
+		background-color: rgb(184, 203, 211);
+		grid-template-areas:
+			"a a"
+			"b c"
+			"b c"
+		;
+	}
+
+	.slider input {
+		display: none;
+	}
+
+	.button_wrapper {
+		display: flex;
+		justify-content: end;
+		grid-area: c;
+		align-items: center;
+	}
+
+	.button_wrapper label {
+		display: inline-block;
+		width: 0.8rem;
+		height: 0.8rem;
+		cursor: pointer;
+		border-radius: 50%;
+		border: 0.5rem solid;
+		border-color: rgb(184, 203, 211);
+		background-color: #1d3750;
+	}
+
+	#input1:checked~.button_wrapper label[for="input1"] {
+		background-color: white;
+	}
+
+	#input2:checked~.button_wrapper label[for="input2"] {
+		background-color: white;
+	}
+
+	#input3:checked~.button_wrapper label[for="input3"] {
+		background-color: white;
+	}
+
+	#input4:checked~.button_wrapper label[for="input4"] {
+		background-color: white;
+	}
+
+	.slider_wrapper {
+		overflow: hidden;
+		grid-area: a;
+	}
+
+	.meme {
+		display: flex;
+		width: 100%;
+		transition: all 0.5s;
+	}
+
+	.meme img {
+		width: 100%;
+		flex-shrink: 0;
+	}
+
+	.text_wrapper {
+		grid-area: b;
+		overflow: hidden;
+		padding-top: 0.5rem;
+
+	}
+
+	.text_content {
+		display: flex;
+		width: 142.5rem;
+	}
+
+	label:hover {
+		border: 0.5rem solid #213d55;
+		border-color: rgb(184, 203, 211);
+		background-color: #456781;
+	}
+
+	.text {
+		width: 100%;
+		font-size: 2rem;
+
+	}
+
+	#input1:checked~.slider_wrapper .meme {
+		transform: translate(0);
+
+	}
+
+	#input2:checked~.slider_wrapper .meme {
+		transform: translateX(-100%);
+	}
+
+	#input3:checked~.slider_wrapper .meme {
+		transform: translateX(-200%);
+	}
+
+	#input4:checked~.slider_wrapper .meme {
+		transform: translateX(-300%);
+	}
+
+	#input1:checked~.text_wrapper .text_content .text {
+		transform: translate(0);
+		transition: all 0.5s ease;
+	}
+
+	#input2:checked~.text_wrapper .text_content .text {
+		transform: translateX(-100%);
+		transition: all 0.5s ease;
+	}
+
+	#input3:checked~.text_wrapper .text_content .text {
+		transform: translateX(-200%);
+		transition: all 0.5s ease;
+	}
+
+	#input4:checked~.text_wrapper .text_content .text {
+		transform: translateX(-300%);
+		transition: all 0.5s ease;
+	}
+
+}
