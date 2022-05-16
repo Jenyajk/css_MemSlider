@@ -12,7 +12,7 @@
         max-width: 42.5rem;
         margin: 5% auto;
         border-radius: 2%;
-		box-shadow: -8rem -9rem 24rem 100rem rgba(10, 10, 10, 0.7);
+		box-shadow: -8rem -9rem 24rem 1000rem rgba(10, 10, 10, 0.7);
         display: grid;
 		background-color: rgb(184, 203, 211);
         grid-template-areas:
